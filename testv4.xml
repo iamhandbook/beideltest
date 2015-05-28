@@ -1,6 +1,12 @@
-﻿
-<html lang="en-au">
-    <head>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Module>
+<ModulePrefs title="huella_badel" >
+        <Require feature="dynamic-height"/>   
+        <Require feature="setprefs" />  
+</ModulePrefs>  
+<Content type="html"><![CDATA[
+
+<head>
         <title>jQuery.Gantt - Test Suite 01</title>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" > 
@@ -173,4 +179,5 @@
 
 		});
   </script>
-</html>
+]]></Content>
+</Module>
