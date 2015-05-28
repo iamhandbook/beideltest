@@ -32,7 +32,7 @@
 
 
 
-/* === LEFT PANEL === */
+/* === LEFT PANEL vazul === */
 
 .fn-gantt .leftPanel {
     float: left;
@@ -68,7 +68,7 @@
     height: 23px;
     margin: 0;
     border-bottom: 1px solid #DDD;
-    background-color: #57AAF8;
+    background-color: #C1E0FD;
 }
 
 .fn-gantt .leftPanel .name {
@@ -87,7 +87,7 @@
 .fn-gantt .spacer {
     margin: -2px 0 1px 0;
     border-bottom: none;
-    background-color: #57AAF8;
+    background-color: #C1E0FD;
 }
 
 
@@ -159,7 +159,7 @@
     border-bottom: 1px solid #DDD;
     height: 23px;
     margin: 0 0 0 -1px;
-    background-color: #57AAF8;
+    background-color: #C1E0FD;
     font-weight: bold;
     font-size: 11px;
     color: #484a4d;
@@ -233,7 +233,7 @@
 
 .fn-gantt .bottom {
     clear: both;
-    background-color: #57AAF8;
+    background-color: #C1E0FD;
     width: 100%;
 }
 .fn-gantt .navigate {

@@ -5,8 +5,7 @@
         <Require feature="setprefs" />  
 </ModulePrefs>  
 <Content type="html"><![CDATA[
-
- <head>
+<head>
         <title>IAM_Roadmap</title>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" > 
@@ -45,7 +44,7 @@
 		<div class="contain">
 
 			<h1>
-				Badel test
+			test
 				<small>&mdash; Roadmap1.0</small>
 			</h1>
 
@@ -66,95 +65,161 @@
 	<script src="https://taitems.github.com/UX-Lab/core/js/prettify.js"></script>
  <script>
 		$(function() {
-
 			"use strict";
+			var today = moment();
+			var andTwoHours = moment().add("hours",2);
 
+			var today_friendly = "/Date(" + today.valueOf() + ")/";
+			var next_friendly = "/Date(" + andTwoHours.valueOf() + ")/";
+			
 			$(".gantt").gantt({
 				source: [{
-					name: "Sprint 0",
-					desc: "Analysis",
+					name: "CIDM",
+					desc: "Release I",
 					values: [{
-						from: "/Date(1320192000000)/",
-						to: "/Date(1322401600000)/",
-						label: "Requirement Gathering",
-						customClass: "ganttRed"
+						from: "/Date(1380254400000)/",
+						to: "/Date(1430366400000)/",
+						label: "CIDM - Common Identity Management - Release I",
+						customClass: "ganttGreen"
 					}]
-				},{
-					name: " ",
-					desc: "Scoping",
+				},
+				{
+					name: "CIDM",
+					desc: "Release II",
 					values: [{
-						from: "/Date(1322611200000)/",
-						to: "/Date(1323302400000)/",
-						label: "Scoping",
-						customClass: "ganttRed"
+						from: "/Date(1397016000000)/",
+						to: "/Date(1438315200000)/",
+						label: "CIDM - Common Identity Management - Release II",
+						customClass: "ganttGreen"
 					}]
-				},{
-					name: "Sprint 1",
-					desc: "Development",
+				},
+				{
+					name: "CIDM",
+					desc: "Release III",
 					values: [{
-						from: "/Date(1323802400000)/",
-						to: "/Date(1325685200000)/",
-						label: "Development",
+						from: "/Date(1441080000000)/",
+						to: "/Date(1483160400000)/",
+						label: "CIDM - Common Identity Management - Release III",
+						customClass: "ganttOrange"
+					}]
+				}
+				
+				
+				,{
+					name: "G2R Migration ",
+					desc: "",
+					values: [{
+						from: "/Date(1380254400000)/",
+						to: "/Date(1433044800000)/",
+						label: "Genentech to Roche AD Migration",
 						customClass: "ganttGreen"
 					}]
 				},{
-					name: " ",
-					desc: "Showcasing",
+					name: "RANGE Consolidation",
+					desc: "",
 					values: [{
-						from: "/Date(1325685200000)/",
-						to: "/Date(1325695200000)/",
-						label: "Showcasing",
-						customClass: "ganttBlue"
+						from: "/Date(1392181200000)/",
+						to: "/Date(1438315200000)/",
+						label: "RANGE License Server and Consolidation",
+						customClass: "ganttGreen"
 					}]
-				},{
-					name: "Sprint 2",
-					desc: "Development",
+				},
+				{
+					name: "ExBP Harmonization",
+					desc: "",
 					values: [{
-						from: "/Date(1326785200000)/",
-						to: "/Date(1325785200000)/",
-						label: "Development",
+						from: "/Date(1405483200000)/",
+						to: "/Date(1447563600000)/",
+						label: "ExBP Process Harmonization",
 						customClass: "ganttGreen"
 					}]
 				},{
-					name: " ",
-					desc: "Showcasing",
+					name: "Remote Access (GNE)",
+					desc: "",
 					values: [{
-						from: "/Date(1328785200000)/",
-						to: "/Date(1328905200000)/",
-						label: "Showcasing",
-						customClass: "ganttBlue"
+						from: "/Date(1416373200000)/",
+						to: "/Date(1442808000000)/",
+						label: "Genentech Strong Autentication for Remote Access",
+						customClass: "ganttGreen"
 					}]
 				},{
-					name: "Release Stage",
-					desc: "Training",
+					name: "Centrify/Roche AD",
+					desc: "",
 					values: [{
-						from: "/Date(1330011200000)/",
-						to: "/Date(1336611200000)/",
-						label: "Training",
+						from: "/Date(1430884800000)/",
+						to: "/Date(1461902400000)/",
+						label: "Genentech UnixServer Migration to Centrify/Roche AD",
 						customClass: "ganttOrange"
 					}]
 				},{
-					name: " ",
-					desc: "Deployment",
+					name: "Encryption ",
+					desc: "",
 					values: [{
-						from: "/Date(1336611200000)/",
-						to: "/Date(1338711200000)/",
-						label: "Deployment",
+						from: "/Date(1431662400000)/",
+						to: "/Date(1449810000000)/",
+						label: "Gententech hard disk encryption",
 						customClass: "ganttOrange"
 					}]
 				},{
-					name: " ",
-					desc: "Warranty Period",
+					name: "Authentication",
+					desc: "",
 					values: [{
-						from: "/Date(1336611200000)/",
-						to: "/Date(1349711200000)/",
-						label: "Warranty Period",
+						from: "/Date(1433304000000)/",
+						to: "/Date(1448859600000)/",
+						label: "Two Factor Authentication for gene.com Domain",
 						customClass: "ganttOrange"
 					}]
-				}],
+				},
+				{
+					name: "Secure file Exchange",
+					desc: "",
+					values: [{
+						from: "/Date(1436932800000)/",
+						to: "/Date(1459310400000)/",
+						label: "Secure file Exchange ",
+						customClass: "ganttOrange"
+					}]
+				},
+				{
+					name: "Virtual Directory",
+					desc: "",
+					values: [{
+						from: "/Date(1446440400000)/",
+						to: "/Date(1477627200000)/",
+						label: "Virtual Directory Extension",
+						customClass: "ganttOrange"
+					}]
+				},
+				{
+					name: "Remote Access (ROCHE)",
+					desc: "",
+					values: [{
+						from: "/Date(1448946000000)/",
+						to: "/Date(1475208000000)/",
+						label: "Extend Remote Access for Roche",
+						customClass: "ganttOrange"
+					}]
+				},
+				{
+					name: "GNE Win ro Roche AD",
+					desc: "",
+					values: [{
+						from: "/Date(1448946000000)/",
+						to: "/Date(1480568400000)/",
+						label: "Migrate GNE Win Servers and Apps to Roche AD",
+						customClass: "ganttOrange"
+					}]
+				},
+
+				
+				],
+				
+				
+				scale: "weeks",
+				minScale: "weeks",
+				maxScale: "months",	
 				navigate: "scroll",
-				maxScale: "hours",
-				itemsPerPage: 10,
+				itemsPerPage: 15,
 				onItemClick: function(data) {
 					alert("Item clicked - show some details");
 				},
@@ -167,7 +232,7 @@
 					}
 				}
 			});
-
+/*
 			$(".gantt").popover({
 				selector: ".bar",
 				title: "I'm a popover",
@@ -175,8 +240,8 @@
 				trigger: "hover"
 			});
 
-			prettyPrint();
-
+			prettyPrint(); 
+*/
 		});
   </script>
   
